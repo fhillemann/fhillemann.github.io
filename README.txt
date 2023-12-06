@@ -1,4 +1,4 @@
-Source code to my research website, [fhillemann.github.io](https://fhillemann.github.io/).
+Source code to my research website, https://fhillemann.github.io/.
 
 This website was created by me, Friederike [freddy; she/her] Hillemann, using RStudio, an open-source integrated development environment (IDE) for R, developed by RStudio, PBC. RStudio is licensed under the GNU Affero General Public License version 3 (AGPL-3.0). The source code contains elements and responsive tools from the templates Miniport and Escape Velocity provided by @ajlkn via html5up.net under the Creative Commons Attribution 3.0 Unported (CC BY 3.0) license. 
 
