@@ -144,12 +144,6 @@ input, select, textarea {
 		font-size: 0.8em;
 	}
 
-	blockquote {
-		border-left: solid 0.75em #eee;
-		padding: 1em 0 1em 1.5em;
-		font-style: italic;
-	}
-
 	h1, h2, h3, h4, h5, h6 {
 		color: #3e3e3e;
 		margin: 0 0 0.5em 0;
@@ -167,11 +161,11 @@ input, select, textarea {
   h1 { /* customised */
     font-size: 3.25em;
     letter-spacing: -0.025em;
-		font-weight: 300;
+	font-weight: 300;
     font-variant: small-caps; 
-		font-family: Calibri, sans-serif;
-		margin-bottom: 5pt;
-		color: #282828;
+	font-family: Calibri, sans-serif;
+	margin-bottom: 5pt;
+	color: #282828;
   } 
 			    
 		h1 strong {
@@ -182,10 +176,9 @@ input, select, textarea {
 	  font-size: 2em;
 	  letter-spacing: -0.015em;
 	  font-variant: small-caps;
-    font-family: Calibri, sans-serif;
-    color: #282828;
-    margin-bottom: 5pt;
-	  
+      font-family: Calibri, sans-serif;
+      color: #282828;
+      margin-bottom: 5pt;
 	} 
 
 	h3 {
@@ -1630,43 +1623,16 @@ input, select, textarea {
 		margin-bottom: 0;
 	}
 
-/* Image */
+/* Profile Photo */
 
-	.image {
-		display: inline-block;
-		position: relative;
-	}
+.image-container {
+    border-radius: 3%;
+	width: 33%;
+    overflow: hidden;
+    border: 0.2em solid #3e3e3e;
+    margin-right: 3em;
+  }
 
-		.image img {
-			display: block;
-			width: 100%;
-		}
-
-		.image.fit {
-			display: block;
-			width: 60%;
-		}
-
-		.image.featured {
-			display: block;
-			width: 100%;
-			margin: 0 0 2em 0;
-		}
-
-		.image.left {
-			float: left;
-			margin: 0 2em 2em 0;
-		}
-
-		.image.centered {
-			display: block;
-			margin: 0 0 2em 0;
-		}
-
-			.image.centered img {
-				margin: 0 auto;
-				width: auto;
-			}
 
 /* Button */
 
@@ -1974,9 +1940,6 @@ input, select, textarea {
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
-		}
-
-		.icon:before {
 			font-size: 1.25em;
 		}
 
@@ -1984,24 +1947,9 @@ input, select, textarea {
 			display: none;
 		}
 
-		.icon.solid:before {
-			font-weight: 900;
-		}
-
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
 		}
-
-		.icon.featured {
-			color: #EA8A95;
-			display: block;
-			margin: 0 0 1.5em 0;
-			cursor: default;
-		}
-
-			.icon.featured:before {
-				font-size: 6em;
-			}
 
 	.custom-bluesky-icon {
 	  color: #8AADB8; 
@@ -2010,7 +1958,11 @@ input, select, textarea {
     border-radius: 0.25em;
     background: linear-gradient(to bottom, #8AADB8, #A4C4D0);
     display: inline-block;
-	  
+	}
+
+	.custom-bluesky-icon:hover {
+		color: #ADD8E6;
+		background: linear-gradient(to bottom, #ADD8E6, #e1f7ff);
 	}
 
 /* Wrappers */
