@@ -241,7 +241,7 @@ body {
 	}
 
 		.container.medium {
-			width: 1000px;
+			width: 85%;
 		}
 
 		@media screen and (max-width: 1680px) {
@@ -297,7 +297,10 @@ body {
 /* Tables */
 
 	table {
-		width: 100%;
+		width: 97%;
+		border-collapse: separate;
+		border-spacing: 0.2em;
+		text-align: left;
 	}
 
 		table.default {
@@ -313,14 +316,13 @@ body {
 				}
 
 			table.default td {
-				padding: 0.5em 1em 0.5em 1em;
+				padding: 0.5em;
+				vertical-align: top;
 			}
 
 			table.default th {
 				text-align: left;
-				padding: 0.5em 1em 0.5em 1em;
-				font-weight: 600;
-				margin: 0 0 1em 0;
+				margin: 0 0 0.5em 0;
 			}
 
 			table.default thead {
@@ -448,7 +450,7 @@ body {
 /* Wrappers */
 
 .wrapper {
-	padding: 2em 0 2em 0;
+	padding: 1em 0 2em 0;
 }
 
 	.wrapper.style1 {
@@ -463,6 +465,7 @@ body {
 		width: 100%;
 		max-width: 100%;
 		text-align: center;
+		padding-top: 5em;
 	}
 
 	/* Wrapper.style2 specific link styles */
@@ -489,8 +492,8 @@ body {
 	margin: 2rem;
 }
 
-	/* no line after media and contact footer section */
-	#media::after {
+	/* no line after cv and contact footer section */
+	#cv::after {
 		display: none;
 	}
 
