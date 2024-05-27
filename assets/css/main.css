@@ -556,7 +556,6 @@ body {
 /* large and medium screens (max-width: 1280px and 980px) */
 @media screen and (max-width: 1280px) {
 	
-	/* Basic */
 	body, input, textarea, select {
 		font-size: 11pt;
 	}
@@ -566,22 +565,76 @@ body {
 
 }
 
-/* Small Screens (max-width: 736px) */
 @media screen and (max-width: 736px) {
-	
-	/* Basic */
-	body {
-		line-height: 1.75em;
-		font-size: 10pt;
-		letter-spacing: 0;
-	}
-	header, footer {
-		margin: 0 0 2em 0;
-		font-size: 1.25em;
-	}v
+    body {
+        line-height: 1.75em;
+        font-size: 10pt;
+        letter-spacing: 0;
+    }
+    header, footer {
+        margin: 0 0 2em 0;
+        font-size: 1.25em;
+    }
 
-	/* Section */
-	section {
-		clear: both;
-	}
+    nav {
+        display: none; /* hide navbar on small screens */
+    }
+
+    section {
+        padding: 1em;
+    }
+
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-container img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1em;
+    }
+
+    .profile-container .profile-text {
+        font-size: 1em;
+        margin: 0;
+    }
+
+    .wrapper.style1 > * {
+        max-width: 100%;
+        padding: 0 1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 9pt;
+    }
+
+    header, footer {
+        font-size: 1em;
+    }
+
+    .profile-container .profile-text {
+        font-size: 0.9em;
+    }
+
+    .wrapper.style1 > * {
+        max-width: 100%;
+        padding: 0 1em;
+    }
+
+    .container.medium {
+        max-width: 100%;
+    }
+
+    .block-text {
+        margin: 0 0.5em;
+    }
+
+    .media-content {
+        margin: 0 0.5em;
+    }
 }
