@@ -606,15 +606,22 @@ body {
         margin: 0;
     }
 
+	.profile-container i {
+        font-size: 0.6em;
+    }
+
     .wrapper.style1 > * {
         max-width: 100%;
         padding: 0 1em;
     }
-}
 
+	/* avoir issue/page numbers being interpreted as phone numbers */
     #publications p {
-        text-decoration: none; /* remove underlining of issue/page numbers being interpreted as phone numbers */ */
+        text-decoration: none; 
+		user-select: none;
+        pointer-events: none;
     }
+}
 
 
 @media screen and (max-width: 480px) {
