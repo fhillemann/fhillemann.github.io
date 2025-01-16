@@ -118,6 +118,19 @@ body {
 			color: #304870;
 		}
 
+		a.no-format-link {
+			color: inherit;
+			text-decoration: inherit;
+			font-variant: inherit;
+			text-transform: inherit;
+			font-weight: inherit;
+			font-size: inherit;
+			cursor: pointer;
+		}
+		
+		a.no-format-link:hover {
+			color: #DBA507;
+		}
 	
 	/* Font styles */
 
